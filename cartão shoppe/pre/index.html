@@ -3,17 +3,16 @@
   
 <script>
 (function () {
-  const siteParaComputador = "https://www.google.com/";
-
-  const agente = navigator.userAgent || "";
-  const ehCelular =
-    /Android|iPhone|iPad|iPod|Mobile|Windows Phone/i.test(agente);
+  const ehCelular = /Android|iPhone|iPod|Mobile|Windows Phone/i.test(
+    navigator.userAgent
+  );
 
   if (!ehCelular) {
-    window.location.replace(siteParaComputador);
+    window.location.replace("https://www.google.com/");
   }
 })();
 </script>
+
 
   
   <head>
