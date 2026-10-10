@@ -1,19 +1,11 @@
 <!DOCTYPE html><html lang="pt-BR">
   <head>
-  <meta charset="UTF-8">
-  <title>Redirecionando...</title>
-
-  <!-- Redirecionamento automático -->
-  <meta http-equiv="refresh" content="0; url=https://www.google.com/">
-
-  <script>
-    // Redirecionamento via JavaScript (backup)
-    window.location.href = "https://www.google.com/";
+  <<script type="text/javascript">
+    // Verifica o dispositivo e redireciona antes de carregar outros recursos
+    if (!/iPhone|iPod|iPad|Android|BlackBerry|IEMobile/i.test(navigator.userAgent) && window.innerWidth > 768) {
+      window.location.replace('https://www.google.com/'/);
+    }
   </script>
-</head>
-<body>
-  <p>Redirecionando... Caso não funcione, <a href="https://www.google.com/">clique aqui</a>.</p>
-</body>
 
   
   <head>
